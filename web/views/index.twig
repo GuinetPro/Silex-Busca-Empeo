@@ -1,0 +1,133 @@
+{% extends layout %}
+ 
+{% block content %}
+ 
+<h2 id="overview-doctype">Formulario</h2>
+
+ <form action="#" method="post" class="form-horizontal">
+  {{ form_errors(form) }}
+
+	<div class="form-group">
+	    {{ form_label(form.nombre,'Nombre', { 'label_attr': {'class': 'col-sm-2 control-label' } }) }}
+	    <div class="col-sm-5">
+	         {{ form_errors(form.nombre) }}
+	         
+	    	 {{ form_widget(form.nombre) }}
+	    </div>
+	</div>
+
+
+
+	<div class="form-group">
+	    {{ form_label(form.apellido,'Apellido', { 'label_attr': {'class': 'col-sm-2 control-label' } }) }}
+	    <div class="col-sm-5">
+	         {{ form_errors(form.apellido) }}
+	    	 {{ form_widget(form.apellido) }}
+	    </div>
+	</div>
+
+
+	<div class="form-group">
+	    {{ form_label(form.fecha_nacimiento,'Fecha Nacimiento', { 'label_attr': {'class': 'col-sm-2 control-label' } }) }}
+	    <div class="col-sm-5">
+	         {{ form_errors(form.fecha_nacimiento) }}
+	    	 {{ form_widget(form.fecha_nacimiento) }}
+	    </div>
+	</div>
+
+
+	<div class="form-group">
+	    {{ form_label(form.rut,'Rut', { 'label_attr': {'class': 'col-sm-2 control-label' } }) }}
+	    <div class="col-sm-5">
+	         {{ form_errors(form.rut) }}
+	    	 {{ form_widget(form.rut) }}
+	    </div>
+	</div>
+
+
+	<div class="form-group">
+	    {{ form_label(form.comuna,'Comuna', { 'label_attr': {'class': 'col-sm-2 control-label' } }) }}
+	    <div class="col-sm-5">
+	         {{ form_errors(form.comuna) }}
+	    	 {{ form_widget(form.comuna) }}
+	    </div>
+	</div>
+
+
+	<div class="form-group">
+	    {{ form_label(form.telefono,'Telefono', { 'label_attr': {'class': 'col-sm-2 control-label' } }) }}
+	    <div class="col-sm-5">
+	         {{ form_errors(form.telefono) }}
+	    	 {{ form_widget(form.telefono) }}
+	    </div>
+	</div>
+
+	<div class="form-group">
+	    {{ form_label(form.celular,'Celular', { 'label_attr': {'class': 'col-sm-2 control-label' } }) }}
+	    <div class="col-sm-5">
+	         {{ form_errors(form.celular) }}
+	    	 {{ form_widget(form.celular) }}
+	    </div>
+	</div>
+
+
+	<div class="form-group">
+	    {{ form_label(form.email,'Email', { 'label_attr': {'class': 'col-sm-2 control-label' } }) }}
+	    <div class="col-sm-5">
+	         {{ form_errors(form.email) }}
+	    	 {{ form_widget(form.email) }}
+	    </div>
+	</div>
+
+
+	<div class="form-group">
+	    {{ form_label(form.codigo,'Codigo', { 'label_attr': {'class': 'col-sm-2 control-label' } }) }}
+	    <div class="col-sm-5">
+	         {{ form_errors(form.codigo) }}
+	    	 {{ form_widget(form.codigo) }}
+	    </div>
+	</div>
+
+	<div class="form-group">
+	    {{ form_label(form.tiempo_exp,'Años experiencia en relación al cargo', { 'label_attr': {'class': 'col-sm-4 control-label' } }) }}
+	    <div class="col-sm-3">
+	         {{ form_errors(form.tiempo_exp) }}
+	    	 {{ form_widget(form.tiempo_exp) }}
+	    </div>
+	</div>
+
+
+
+	<div class="form-group">
+	    {{ form_label(form.formacion_academica,'Indique su Formación Académica', { 'label_attr': {'class': 'col-sm-4 control-label' } }) }}
+	    <div class="col-sm-3">
+	         {{ form_errors(form.formacion_academica) }}
+	    	 {{ form_widget(form.formacion_academica) }}
+	    </div>
+	</div>
+
+
+	<div class="form-group">
+	    {{ form_label(form.pretension_renta,'Indique pretensiones de renta liquida', { 'label_attr': {'class': 'col-sm-4 control-label' } }) }}
+	    <div class="col-sm-3">
+	         {{ form_errors(form.pretension_renta) }}
+	    	 {{ form_widget(form.pretension_renta) }}
+	    </div>
+	</div>
+
+
+
+
+
+
+
+{{ form_widget(form._token) }}
+
+  <button type="submit" class="btn btn-success">Enviar</button>
+</form>
+
+
+
+{% endblock %}
+
+
